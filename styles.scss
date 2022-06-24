@@ -1,0 +1,49 @@
+@import "menu";
+@mixin StyleFont{
+    text{
+        align: center;
+    }
+
+    font{
+        family:  Arial, Helvetica, sans-serif;
+    }
+
+    color: gray;
+
+}
+
+
+
+footer{
+    padding: 1rem;
+    margin: 1rem;
+    background: lightgray;
+}
+
+h1{
+    color: #3B5249;
+    text-align: center;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    @include StyleFont();
+}
+
+h3{
+    @include StyleFont();
+}
+
+h5{
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+h6{
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row{
+    justify-content: center;
+}
